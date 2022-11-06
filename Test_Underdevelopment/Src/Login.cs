@@ -34,7 +34,7 @@ namespace Test_Underdevelopment.Src
         }
         public Shell Login_succeed_correctInfo(string userName, string password)
         {
-            System.Threading.Thread.Sleep( 4000 );
+          
             driver.FindElement(m_userName).SendKeys(userName);
             driver.FindElement(m_password).SendKeys(password);
             driver.FindElement(m_loginButton).Click();
